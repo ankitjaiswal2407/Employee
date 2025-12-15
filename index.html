@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unscripted — Employee Leave Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- EmailJS SDK (optional) - used if you configure EmailJS IDs in script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Vertical brand on left side -->
+    <div id="vertical-brand" class="vertical-brand" aria-hidden="true">apaHR</div>
+
+    <div id="landing-section" class="landing-page">
+        <header class="landing-header">
+            <div class="nav-brand">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/702/848/small/abstract-letter-hr-logo-isolated-on-white-background-vector.jpg" alt="apaHR logo" class="site-logo" />
+                <div class="nav-brand-text">
+                  <h1>apaHR</h1>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button id="nav-login-btn" class="nav-btn">Login</button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to apaHR</h1>
+                <p class="hero-subtitle">Modern Employee Leave Management System</p>
+                <p class="hero-desc">Streamline your leave requests, approvals, and manage holidays with ease.</p>
+                <button id="cta-login" class="btn btn-primary-lg">Get Started</button>
+            </div>
+        </section>
+
+        <section id="hero-slider-section" class="section slider-section slider-hidden">
+            <div class="hero-grid">
+                <div class="hero-slider">
+                    <div class="slider-image-wrap">
+                        <img id="hero-slider-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80&auto=format&fit=crop" alt="Team discussing leave schedules" />
+                    </div>
+                    <div class="slider-controls">
+                        <button id="hero-prev" class="btn small" aria-label="Previous slide">‹</button>
+                        <button id="hero-next" class="btn small" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+
+                <div class="hero-desc">
+                    <h2 id="hero-slider-title">Welcome to apaHR</h2>
+                    <p class="hero-subtitle" id="hero-slider-subtitle">Modern Employee Leave Management System</p>
+                    <p class="hero-desc-text" id="hero-slider-text">Streamline your leave requests, approvals, and manage holidays with ease.</p>
+                    <div class="hero-cta">
+                        <button id="cta-login-2" class="btn btn-primary-lg">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tagline-section">
+            <div class="tagline-content">
+                <h2 class="tagline-text">Manage leave requests in a way that won't hurt your employees or business</h2>
+                <p class="tagline-subtitle">Smart leave management balances organizational needs with employee wellness</p>
+            </div>
+        </section>
+
+        <section id="features" class="section features-section">
+            <h2 id="textfeature">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Easy Leave Application</h3>
+                    <p>Apply for leave with dates, reason, and optional attachments in just a few clicks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Eco-Friendly & Paperless</h3>
+                    <p>The system removes paper-based leave forms,reducing waste & saving trees.Employees apply & track leave digitally,easy access,and a fully eco-friendly workflow.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Smart Approvals</h3>
+                    <p>HR can easily review, approve, or reject leave requests with custom notes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Holiday Tracking</h3>
+                    <p>Get 3 free days annually. Extra days automatically trigger salary adjustments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Multi-Role Support</h3>
+                    <p>Employee, HR, and Admin dashboards with role-specific features.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Data Storage</h3>
+                    <p>All data is securely stored in your browser's localStorage for privacy.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2>About apaHR</h2>
+            <div class="about-content">
+                <p><strong>apaHR</strong> is a leading innovator in HR technology, dedicated to simplifying employee management processes.</p>
+                <p>Our leave management system is designed with employees and HR teams in mind, making it seamless to manage time off, track holidays, and maintain productivity.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <div class="contact-item">
+                        <strong>📧 Email:</strong> support@apaHR.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong> +91 6709864567
+                    </div>
+                    <div class="contact-item">
+                        <strong>🏢 Address:</strong> BH5, Upper Dhoolkot Dehradun,248011
+                    </div>
+                    <div class="contact-item">
+                        <strong>⏰ Hours:</strong> Monday - Friday, 9 AM - 6 PM (EST)
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="landing-footer">
+            <p>&copy; All rights reserved to aj8377260@gmail.com.</p>
+            <p>Simplifying HR for modern workplaces.</p>
+        </footer>
+    </div>
+
+    <main id="app-section" class="container hidden">
+                <header class="site-header">
+                        <div class="brand">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/702/848/small/abstract-letter-hr-logo-isolated-on-white-background-vector.jpg" alt="apaHR logo" class="site-logo" />
+                                <div class="brand-text">
+                                    <h1>apaHR</h1>
+                                    <div class="tagline">Employee Leave Management Portal</div>
+                                </div>
+                                                <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+                        <div id="top-info"></div>
+                </header>
+
+        <section id="login-section" class="card">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label>
+                    Username
+                    <input id="username" required placeholder="e.g. emp1" />
+                </label>
+                <label>
+    
+                    Captcha
+                    <div class="captcha-row">
+                        <span id="captcha-question" class="captcha-question">What is 3 + 4?</span>
+                        <input id="captcha-answer" type="text" required placeholder="Answer" />
+                        <button type="button" id="refresh-captcha" class="btn small">↻</button>
+                    </div>
+                </label>
+                <label>
+                    Role
+                    <select id="role">
+                        <option value="employee">Employee</option>
+                        <option value="hr">HR</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </label>
+                <div class="buttons">
+                    <button type="submit">Login</button>
+                    <button type="button" id="seed-btn">Seed demo data</button>
+                    <button type="button" id="back-main-btn" class="btn">← Back to Main Page</button>
+                </div>
+            </form>
+            <p class="muted">Demo users: <strong>emp, emp1, emp2, emp3</strong> (employees), <strong>hr</strong> (HR), <strong>admin</strong> (admin) — use the role dropdown and solve the captcha to log in.</p>
+        </section>
+
+        <!-- Dashboards -->
+        <section id="employee-section" class="card hidden">
+            <h2>Employee Dashboard</h2>
+            <div id="profile" class="profile"></div>
+
+            <!-- Calendar: shows public holidays and company events. Clicking a date will prefill the leave form. -->
+            <div id="calendar-section" class="card calendar-card">
+                <h3>Company Calendar</h3>
+                <div id="calendar-controls" class="calendar-controls">
+                    <button id="cal-prev" class="btn small">◀</button>
+                    <div id="cal-month" class="cal-month"></div>
+                    <button id="cal-next" class="btn small">▶</button>
+                    <button id="cal-clear" class="btn small">Clear selection</button>
+                </div>
+                <div id="calendar" class="calendar-grid" aria-label="Company calendar"></div>
+                <div class="calendar-legend"><span class="legend-holiday"></span> Public Holiday <span class="legend-event"></span> Company Event</div>
+            </div>
+
+            <h3>Apply for Leave</h3>
+            <form id="leave-form">
+                <label>From <input id="from-date" type="date" required /></label>
+                <label>To <input id="to-date" type="date" required /></label>
+                <label>Leave Type 
+                    <select id="leave-type" required>
+                        <option value="">Select Leave Type</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                        <option value="Casual Leave">Casual Leave</option>
+                        <option value="Earned Leave">Earned Leave</option>
+                        <option value="Marriage Leave">Marriage Leave</option>
+                    </select>
+                </label>
+                <label>Duration
+                    <select id="leave-portion" required>
+                        <option value="full">Full Day</option>
+                        <option value="half">Half Day</option>
+                    </select>
+                </label>
+                <label>Reason <textarea id="reason" rows="3" required></textarea></label>
+                <label>Attachment <input id="attachment" type="file" /></label>
+                <div class="buttons"><button type="submit">Submit Leave</button></div>
+            </form>
+
+            <h3>Your Leaves</h3>
+            <div id="employee-leaves"></div>
+            <div class="buttons"><button id="logout-emp">Logout</button></div>
+        </section>
+
+        <section id="hr-section" class="card hidden">
+            <h2>HR Dashboard</h2>
+            <div id="pending-leaves"></div>
+            <h3>All Leaves</h3>
+            <div id="all-leaves"></div>
+            <div class="buttons"><button id="logout-hr">Logout</button></div>
+        </section>
+
+        <section id="admin-section" class="card hidden">
+            <h2>Admin Dashboard</h2>
+            <h3>Users</h3>
+            <div id="users-list"></div>
+            <h3>All Leaves</h3>
+            <div id="admin-all-leaves"></div>
+            <div class="buttons"><button id="logout-admin">Logout</button></div>
+        </section>
+
+        <footer class="muted">This is a simple client-side demo — data is stored in your browser's localStorage.</footer>
+    </main>
+</body>
+</html>
